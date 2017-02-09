@@ -37,7 +37,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:hint="Wpisz nazwę ulicy"
-            android:inputType="number" />
+            android:inputType="textPersonName" />
 
         <AutoCompleteTextView
             android:id="@+id/streetNumber"
@@ -48,7 +48,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:hint="Nr"
-            android:inputType="textPersonName" />
+            android:inputType="number" />
 
         <ImageButton
             android:id="@+id/imageButton"
