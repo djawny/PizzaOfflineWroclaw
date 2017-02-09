@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">PizzaOfflineWroclaw</string>
+    <string name="best_pizza">"Najlepsza pizza we Wrocławiu"</string>
+
+    <string-array name="streets">
+        <item>Abrahama,</item>
+        <item>Abrahama,</item>
+        <item>Abramowskiego</item>
+        <item>Abramowskiego</item>
+        <item>Adamczewskich</item>
+        <item>Adamczewskich</item>
+        <item>Adamieckiego</item>
+        <item>Adamieckiego</item>
+        <item>Admiralska</item>
+        <item>Admiralska</item>
+        <item>Afgańska</item>
+        <item>Afgańska</item>
+        <item>Agrestowa</item>
+        <item>Agrestowa</item>
+        <item>Akacjowa</item>
+        <item>Akacjowa</item>
+        <item>Aleja Dębowa</item>
+        <item>Aleja Dębowa</item>
+        <item>Aleja Pracy</item>
+        <item>Aleja Pracy</item>
+        <item>Aleja Dębowa</item>
+        <item>Aleja Dębowa</item>
+        <item>Aleja Pracy</item>
+        <item>Aleja Pracy</item>
+        <item>Aliancka</item>
+        <item>Aliancka</item>
+        <item>Alpejska</item>
+        <item>Alpejska</item>
+        <item>Altanowa</item>
+        <item>Altanowa</item>
+        <item>Amarantowa</item>
+        <item>Amarantowa</item>
+        <item>Ametystowa</item>
+        <item>Ametystowa</item>
+        <item>Ananasowa</item>
+        <item>Ananasowa</item>
+        <item>Anczyca</item>
+        <item>Anczyca</item>
+        <item>Angielska</item>
+        <item>Angielska</item>
+    </string-array>
+
+</resources>
