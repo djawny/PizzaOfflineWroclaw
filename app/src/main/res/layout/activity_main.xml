@@ -34,6 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:hint="Wpisz nazwę ulicy"
             android:inputType="number" />
 
@@ -43,6 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
             android:ems="3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:hint="Nr"
             android:inputType="textPersonName" />
 
@@ -50,8 +54,8 @@
             android:id="@+id/imageButton"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:padding="8dp"
             android:onClick="search"
+            android:padding="8dp"
             app:srcCompat="@drawable/ic_search_black_24dp" />
     </LinearLayout>
 
