@@ -6,10 +6,10 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="autoCompleteTextViewStyle">@style/searchStyleEditText</item>
+        <item name="autoCompleteTextViewStyle">@style/searchStyle</item>
     </style>
 
-    <style name="searchStyleEditText">
+    <style name="searchStyle">
         <item name="android:background">@drawable/search_bg</item>
     </style>
 

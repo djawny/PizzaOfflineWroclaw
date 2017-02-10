@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
-        android:text="Pizzeria"
+        android:text="Znajdź pizzerie:"
         android:textColor="@android:color/white"
         android:textSize="30dp" />
 
@@ -85,16 +85,17 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/best_pizza" />
+                android:text="@string/best_pizza"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_weight="1"
-                android:text="ToDo" />
+                android:gravity="center"
+                android:textColor="@android:color/white" />
         </LinearLayout>
     </LinearLayout>
 
