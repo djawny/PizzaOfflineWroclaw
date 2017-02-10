@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setAdapters() {
-        streetName.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, streetsArray));
-        streetNumber.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, numbers));
+        streetName.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, streetsArray));
+        streetNumber.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, numbers));
     }
 
     private void loadResources() {
