@@ -51,9 +51,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void search(View view) {
-        resultView.setVisibility(View.VISIBLE);
         String name = streetName.getText().toString();
         String nr = streetNumber.getText().toString();
-        result.setText(String.format("Ulica: %s Nr: %s", name, nr));
+        if (!name.isEmpty() && !nr.isEmpty()) {
+            resultView.setVisibility(View.VISIBLE);
+            result.setText(String.format("Ulica: %s Nr: %s", name, nr));
+        }
     }
 }
