@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">PizzaOfflineWroclaw</string>
+    <string name="app_name">Pizza Offline Wroclaw</string>
     <string name="best_pizza">"Najlepsza pizza we Wrocławiu:"</string>
+    <string name="find_pizzeria">Znajdź pizzerie:</string>
+    <string name="enter_street_name">Wpisz nazwę ulicy</string>
+    <string name="nr">Nr</string>
 
     <string-array name="streets">
         <item>Abrahama,</item>

@@ -8,39 +8,49 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class MainActivity extends AppCompatActivity {
 
-    private AutoCompleteTextView streetName;
-    private AutoCompleteTextView streetNumber;
+    @BindView(R.id.street_name)
+    AutoCompleteTextView mStreetName;
+
+    @BindView(R.id.street_number)
+    AutoCompleteTextView mStreetNumber;
+
+    @BindView(R.id.result)
+    TextView result;
+
+    @BindView(R.id.result_layout)
+    ViewGroup resultView;
+
     private String[] numbers = new String[100];
     private String[] streetsArray = new String[40];
-    private TextView result;
-    private ViewGroup resultView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        loadResources();
-        bindViews();
+        ButterKnife.bind(this);
         init();
+        loadResources();
         setAdapters();
     }
 
-    private void bindViews() {
-        streetName = (AutoCompleteTextView) findViewById(R.id.streetName);
-        streetNumber = (AutoCompleteTextView) findViewById(R.id.streetNumber);
-        resultView = (ViewGroup) findViewById(R.id.resultLayout);
-        result = (TextView) findViewById(R.id.result);
+    @OnClick(R.id.image_button)
+    public void search(View view) {
+        String name = mStreetName.getText().toString();
+        String nr = mStreetNumber.getText().toString();
+        if (!name.isEmpty() && !nr.isEmpty()) {
+            resultView.setVisibility(View.VISIBLE);
+            result.setText(String.format("Ulica: %s Nr: %s", name, nr));
+        }
     }
 
     private void init() {
         resultView.setVisibility(View.GONE);
-    }
-
-    private void setAdapters() {
-        streetName.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, streetsArray));
-        streetNumber.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, numbers));
     }
 
     private void loadResources() {
@@ -50,12 +60,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void search(View view) {
-        String name = streetName.getText().toString();
-        String nr = streetNumber.getText().toString();
-        if (!name.isEmpty() && !nr.isEmpty()) {
-            resultView.setVisibility(View.VISIBLE);
-            result.setText(String.format("Ulica: %s Nr: %s", name, nr));
-        }
+    private void setAdapters() {
+        mStreetName.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, streetsArray));
+        mStreetNumber.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, numbers));
     }
 }
